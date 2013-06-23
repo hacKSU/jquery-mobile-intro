@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+        <!-- <form action="some.php" method="post"> -->
+        <form>
+            <label for="basic">Name:</label>
+            <input type="text" id="name" data-mini="true" />
+            <label for="basic">Bithdate:</label>
+            <input type="text" id="dob" data-mini="true" />
+            <button onClick="displayMsg();">Submit</button>
+        </form>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+
+<script>
+function displayMsg(){
+    alert("Hello: " + $("#name").attr("value") + ". You are born on:" + $("#dob").attr("value") );
+}
+</script>
+
+</html>

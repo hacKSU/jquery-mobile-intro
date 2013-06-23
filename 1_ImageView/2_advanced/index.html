@@ -1,0 +1,673 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Galleries</title>
+
+	<!-- Begin jQuery Mobile magical inclusions -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"> 
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!-- End jQuery Mobile magical inclusions -->
+
+	<script>
+		window.top.scrollTo(0, 1); // Make sure not to show the URL bar
+		// Note: it is known that if the page's height is less than the screen's, this may not hide the address bar.
+	</script>
+	<style>
+		.iCentered { /* Center page elements */
+			text-align: center;
+		}
+		.myThumbs {	/* Keep pics within the bounds of the grid */
+			max-width: 80%;
+			max-height: 80%;
+		}
+		.myPics { /* Keep pics within the bounds of the page content */
+			max-height: 100%;
+			max-width: 100%;
+		}
+	</style>
+
+</head>
+<body>
+
+<div data-role="page" id="galleries">
+	<div data-role="header">
+		<h1>Galleries</h1>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview">
+		<li>
+			<a href="#gallery0" data-ajax="false">
+				<img src="galleries/Leaf_BG/Leaf_BG_1.jpg"/>
+				<h3>Leaf BG</h3>
+				<p>6 Images</p>
+			</a>
+		</li>
+		<li>
+			<a href="#gallery1" data-ajax="false">
+				<img src="galleries/Mushrooms/Mushroom_1.jpg"/>
+				<h3>Mushrooms</h3>
+				<p>8 Images</p>
+			</a>
+		</li>
+		<li>
+			<a href="#gallery2" data-ajax="false">
+				<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_18.59.43.jpg"/>
+				<h3>jQuery Mobile Presentation</h3>
+				<p>12 Images</p>
+			</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+<div data-role="page" id="gallery0">
+<div data-role="header" data-position="fixed">
+	<a href="./" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG</h1>
+</div>
+<div data-role="content">
+	<div class="ui-grid-a">
+		<div class="ui-block-a iCentered"><a href="#gallery0image0" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_1.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery0image1" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_2.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery0image2" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_3.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery0image3" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_4.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery0image4" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_5.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery0image5" data-ajax="false"><img src="galleries/Leaf_BG/Leaf_BG_6.jpg" class="myThumbs"/></a></div>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-transition="slide" data-iconpos="notext" href="#gallery2"></a></li>
+			<li><a data-icon="arrow-r" data-transition="slide" data-direction="reverse" data-iconpos="notext" href="#gallery1"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="gallery1">
+<div data-role="header" data-position="fixed">
+	<a href="./" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushrooms</h1>
+</div>
+<div data-role="content">
+	<div class="ui-grid-a">
+		<div class="ui-block-a iCentered"><a href="#gallery1image0" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_1.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery1image1" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_2.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery1image2" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_3.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery1image3" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_4.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery1image4" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_5.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery1image5" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_6.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery1image6" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_7.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery1image7" data-ajax="false"><img src="galleries/Mushrooms/Mushroom_8.jpg" class="myThumbs"/></a></div>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-transition="slide" data-iconpos="notext" href="#gallery0"></a></li>
+			<li><a data-icon="arrow-r" data-transition="slide" data-direction="reverse" data-iconpos="notext" href="#gallery2"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="gallery2">
+<div data-role="header" data-position="fixed">
+	<a href="./" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>jQuery Mobile Presentation</h1>
+</div>
+<div data-role="content">
+	<div class="ui-grid-a">
+		<div class="ui-block-a iCentered"><a href="#gallery2image0" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_18.59.43.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image1" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.00.54.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery2image2" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.09.04-1.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image3" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.09.04-2.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery2image4" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.12.15.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image5" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.14.31.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery2image6" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.14.35.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image7" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.13.15.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery2image8" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.13.17.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image9" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.48.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-a iCentered"><a href="#gallery2image10" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.52.jpg" class="myThumbs"/></a></div>
+		<div class="ui-block-b iCentered"><a href="#gallery2image11" data-ajax="false"><img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.55.jpg" class="myThumbs"/></a></div>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-transition="slide" data-iconpos="notext" href="#gallery1"></a></li>
+			<li><a data-icon="arrow-r" data-transition="slide" data-direction="reverse" data-iconpos="notext" href="#gallery0"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="gallery0image0">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 1.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_1.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image5"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image1"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery0image1">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 2.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_2.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image0"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image2"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery0image2">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 3.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_3.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image1"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image3"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery0image3">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 4.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_4.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image2"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image4"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery0image4">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 5.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_5.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image3"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image5"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery0image5">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery0" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Leaf BG 6.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Leaf_BG/Leaf_BG_6.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery0image4"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery0image0"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image0">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 1.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_1.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image7"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image1"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image1">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 2.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_2.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image0"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image2"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image2">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 3.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_3.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image1"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image3"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image3">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 4.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_4.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image2"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image4"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image4">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 5.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_5.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image3"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image5"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image5">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 6.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_6.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image4"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image6"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image6">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 7.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_7.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image5"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image7"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery1image7">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery1" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>Mushroom 8.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/Mushrooms/Mushroom_8.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery1image6"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery1image0"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image0">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 18.59.43.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_18.59.43.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image11"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image1"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image1">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.00.54.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.00.54.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image0"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image2"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image2">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.09.04-1.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.09.04-1.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image1"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image3"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image3">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.09.04-2.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.09.04-2.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image2"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image4"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image4">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.12.15.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.12.15.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image3"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image5"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image5">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.14.31.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.14.31.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image4"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image6"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image6">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 19.14.35.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_19.14.35.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image5"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image7"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image7">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 20.13.15.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.13.15.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image6"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image8"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image8">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 20.13.17.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.13.17.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image7"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image9"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image9">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 20.30.48.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.48.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image8"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image10"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image10">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 20.30.52.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.52.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image9"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image11"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div data-role="page" id="gallery2image11">
+<div data-role="header" data-position="fixed">
+	<a href="#gallery2" data-role="button" data-icon="back" data-iconpos="notext" data-direction="reverse"></a>
+	<h1>2012-10-11 20.30.55.jpg</h1>
+</div>
+
+<div data-role="content">
+	<div data-role="content-primary" class="iCentered">
+		<img src="galleries/jQuery_Mobile_Presentation/2012-10-11_20.30.55.jpg" class="myPics"/>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-icon="arrow-l" data-iconpos="notext" data-transition="slide" href="#gallery2image10"></a></li>
+			<li><a data-icon="arrow-r" data-iconpos="notext" data-transition="slide" data-direction="reverse" href="#gallery2image0"></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>

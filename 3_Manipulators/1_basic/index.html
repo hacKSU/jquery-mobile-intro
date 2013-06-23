@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Selectors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	<script>
+		function myAppend() {
+			$("#text").append(", world.");
+		}
+
+		function myHtml() {
+			$("#text").html("What's up, moon?");
+		}
+		
+		var hidden = false;
+		function myShowHide() {
+			if (hidden) {
+				$("#text").show();
+				hidden = false;
+			}
+			else {
+				$("#text").hide();
+				hidden = true;
+			}
+		}
+		
+		function myRemove() {
+			$("#text").remove();
+		}
+	</script>
+
+</head> 
+<body> 
+
+<div data-role="page">
+	<div data-role="content">
+		<a id="text">Hello</a>
+		<div data-role="button" onclick="myAppend()">Append</div>
+		<div data-role="button" onclick="myHtml()">Html</div>
+		<div data-role="button" onclick="myShowHide()">Show/Hide</div>
+		<div data-role="button" onclick="myRemove()">Remove</div>		
+	</div>
+</div>
+
+</body>
+</html>

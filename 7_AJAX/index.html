@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<title>My KSU App</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<!-- LOGIN -->
+
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-position="fixed">Login</div>
+	
+		<div data-role="content">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username" data-mini="true" autofocus="true"/>
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" data-mini="true"/>
+
+			<input id="loginBtn" type="button" value="Login" />
+		</div>
+	</div>
+
+	<!-- SCHEDULE -->
+
+	<div data-role="page" data-theme="a" id="schedule">
+		<div data-role="header" data-position="fixed">My Schedule</div>
+
+		<div data-role="content">
+			<div data-role="collapsible" data-collapsed="true">
+				<h2>Monday</h2>
+				<ul data-role="listview" id="monday"></ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h2>Tuesday</h2>
+				<ul data-role="listview" id="tuesday"></ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h2>Wednesday</h2>
+				<ul data-role="listview"id="wednesday"></ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h2>Thursday</h2>
+				<ul data-role="listview" id="thursday"></ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h2>Friday</h2>
+				<ul data-role="listview" id="friday"></ul>
+			</div>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" style="text-align: center">
+				<ul>
+					<il>
+						<a data-icon="grid" class="ui-btn-active ui-btn-persist">My Schedule</a>
+					</il>
+					<!--<il>
+						<a href="#info" data-icon="info" data-transition="slideup">My Info</a>
+					</il>-->
+					<il>
+						<a href="#flashcash" data-icon="star" data-transition="slide">My Balances</a>
+					</il>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- FLASHCASH -->
+
+	<div data-role="page" data-theme="e" id="flashcash">
+		<div data-role="header" data-position="fixed">My Flash Cash</div>
+	
+		<div data-role="content" id="balance">
+			<h1 id = "meal_plan">Meal Plan: $</h1>
+			<h1 id = "flash_cash">Flash Cash: $</h1>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" style="text-align: center">
+				<ul>
+					<il>
+						<a href="#schedule" data-icon="grid" data-transition="slide" data-direction="reverse">My Schedule</a>
+					</il>
+					<!--<il>
+						<a href="#info" data-icon="info" data-transition="slide" data-direction="reverse">My Info</a>
+					</il>-->
+					<il>
+						<a data-icon="star" class="ui-btn-active ui-btn-persist">My Balances</a>
+					</il>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

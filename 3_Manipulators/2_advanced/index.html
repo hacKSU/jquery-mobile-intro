@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Select and Manipulate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	<script>
+		$("#page1").live("pageinit",function(){
+			var num = 1;
+			$("#myButton").click(function(){
+				var tmpNum = parseInt($("#fib").html());
+				$("#fib").html(tmpNum+num);
+				num = tmpNum;
+			});		
+		});
+	</script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="page1">
+	<div data-role="content">
+		<div data-role="button" id="myButton">Let's Fibonacci</div>
+		<div style="text-align: center">
+			<br /><br />
+			<a id="fib" style="font-size: 40pt">1</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
